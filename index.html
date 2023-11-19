@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ost och Chark priskalkylator</title>
+<link rel="stylesheet" href="design.css">
+
+</head>
+<body>
+
+<div class="calculator">
+    <h3>Ost och Chark priskalkylator</h3>
+  <div class="input-group">
+    <label for="weight">Vikt (kg):</label>
+    <input type="number" id="weight" placeholder="Ange vikt i kg">
+  </div>
+  <div class="input-group">
+    <label for="pricePerKg">Pris per kg (kr):</label>
+    <input type="number" id="pricePerKg" placeholder="Ange pris per kg">
+  </div>
+  <button onclick="calculatePrice()">Beräkna Pris</button>
+  <div id="result">
+    <p>Totalt pris: <span id="totalPrice">0</span> kr</p>
+  </div>
+</div>
+
+<script>
+function calculatePrice() {
+  var weight = document.getElementById('weight').value;
+  var pricePerKg = document.getElementById('pricePerKg').value;
+  var totalPrice = (weight * pricePerKg).toFixed(2);
+  document.getElementById('totalPrice').innerText = totalPrice;
+}
+</script>
+
+</body>
+</html>

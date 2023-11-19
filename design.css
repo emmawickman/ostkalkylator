@@ -1,0 +1,217 @@
+
+
+body {
+    font-family: Montserrat, sans-serif;
+    background-color: #DBC0BA;
+    padding: 20px;
+    font-size: 34px;
+    letter-spacing: 1.7px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-image: url('images/bild.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    border-radius: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+
+  }
+
+
+    h1 {
+        font-size: 60px;  /* eller vilken storlek du föredrar */
+        color: rgb(255, 255, 255);
+        letter-spacing: 2px;
+    }
+    h3 {
+        font-size: 40px;  /* eller vilken storlek du föredrar */
+        color: 
+        #383838;
+        letter-spacing: 2px;
+    }
+
+
+ /*----navigering / menu-----*/
+
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    font-family: Montserrat, sans-serif;
+    text-decoration: none;
+    color: #344B3B;
+}
+
+p {
+    color: #344B3B;
+    font-family: Montserrat, sans-serif;
+    padding-top: 2%;
+    letter-spacing: 1.6px;
+    
+}
+
+
+    .box .output {
+        font-size: 34px;
+        width: 88%;
+        
+        
+    }
+   
+
+
+    select {
+        font-size: 44px;  /* eller vilken storlek du föredrar */
+        background-color: rgb(255, 255, 255);
+        color: rgb(198, 30, 92);
+        border: rgb(180, 151, 119);
+        letter-spacing: 1.7px;
+    }
+
+    button {
+        background-color: #271F1D;
+        font-size: 34px;  /* eller vilken storlek du föredrar */
+        color: white;
+        letter-spacing: 1.7px;
+        border-radius: 20px;
+        padding: 8px;
+        margin-top: 40px;
+    }
+
+    input {
+        background-color: rgb(255, 255, 255);
+        font-size: 34px;  /* eller vilken storlek du föredrar */
+        color: #383838;
+    }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+      .menu-icon {
+          display: block;
+          cursor: pointer;
+      }
+      
+      nav ul {
+          text-transform: uppercase;
+          position: absolute;      /* Changed to absolute so it expands as per content */
+          top: 60px;               /* Start from below the menu icon */
+          left: 0;                 /* Start from the left side */
+          right: 0;                /* Stretch to the right side */
+          background: rgb(236, 238, 239);
+          opacity: 0.9;
+          transition: max-height 0.5s;
+          z-index: 10;
+          text-align: left;
+          display: none;          /* Initially hidden */
+      }
+      
+      nav ul.open {
+          display: block;         /* Display the menu when 'open' class is added */
+      }
+      
+      nav ul li {
+          text-align: center;
+          font-size: 12px;
+          display: block;
+          margin-right: 5px;
+          margin-left: 5px;
+          margin-top: 20px;
+          z-index: 10;
+      }
+      
+      nav ul li a {
+          color: #344B3B;
+      }
+      
+      nav ul li a:hover {
+          font-weight: bold;
+      }
+    }
+    
+
+
+
+
+
+
+
+
+
+
+    body {
+        font-family: Arial, sans-serif;
+      }
+      
+      .input-group {
+        margin-bottom: 10px;
+      }
+      label {
+        margin-right: 10px;
+      }
+      input {
+        margin-right: 10px;
+        width: 280px;
+      }
+      #totalPrice {
+        font-weight: bold;
+      }
+
+
+
+/*-----media less and 800px-----*/
+@media only screen and (max-width: 800px) {
+ 
+    body {
+       font-family: 'Montserrat', sans-serif;
+       color: #666;
+       background-repeat: no-repeat;
+       background-size: 100% 100%;
+       background-image: url('images/mobilbakgrund.jpg');
+     }
+    
+     .calculator {
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        display: inline-block;
+        border-radius: 10%;
+        background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    
+      }
+        
+      }     
+      
